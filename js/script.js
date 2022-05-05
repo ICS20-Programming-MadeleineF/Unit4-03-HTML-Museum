@@ -17,11 +17,11 @@ function displayCost() {
 	let select = document.getElementById('day');
 	let day = select.options[select.selectedIndex].value;
 
-    	// if age is less then 5 or more the 95 it is free
+    	//  if age is less than 5 or more than 95 it is free
 	if (age < 5 || age > 95) {
 		cost = "It is free."
 	}
-      	// if age equal or more then 12 or more or equal the 21 or it os tuesday or frienday then you get a student discount
+      	// if age is equal or more then 12 or equal or less then 21 or if it is tuesday or thuraday then you get a student discount
 	else if ((day == "Tuesday") || (day == "Thursday")
 			 (age >=12) && (age <=21)) {
 		cost = "You get a student discount."
